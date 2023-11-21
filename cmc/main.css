@@ -1,0 +1,461 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*----------------Navba--------------------------------*/
+/* Navbar chung */
+.navbar {
+    height: 100px;
+    transition: background-color 0.3s;
+    /* Hiệu ứng chuyển động khi thay đổi màu nền */
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar-brand {
+    width: 80px;
+    height: 80px;
+}
+
+/* Logo trong navbar */
+.container-fluid a img {
+    width: 100%;
+    height: 80px;
+    object-fit: contain;
+    margin-left: 0px;
+}
+
+/* Menu và liên kết trong navbar */
+.navbar-nav {
+    margin-left: 100px;
+}
+
+.nav-item {
+    margin: 10px;
+}
+
+.nav-item a {
+    font-size: 17px;
+    color: rgb(38, 84, 158);
+    transition: color 0.5s;
+    font-family: 'Poppins, Sans-serif';
+}
+
+.nav-item a:hover {
+    color: white;
+    background-color: rgb(38, 84, 158);
+}
+
+.nav-item a img {
+    width: 20px;
+    height: 20%;
+    margin-bottom: 5px;
+}
+
+/* Phần contact us và biểu tượng */
+.d-flex {
+    margin-right: 10px;
+}
+
+.d-flex a {
+    margin: 40px;
+}
+
+.fa-solid.fa-magnifying-glass {
+    font-size: 20px;
+    color: rgb(38, 84, 158);
+    transition: color 0s;
+}
+
+.fa-solid.fa-magnifying-glass:hover {
+    color: #d4af36;
+}
+
+.fa-solid.fa-bars {
+    font-size: 30px;
+    color: rgb(38, 84, 158);
+}
+
+/* Nút Contact Us */
+.d-flex button {
+    height: 35px;
+    width: 120px;
+    margin-top: 35px;
+    margin-right: 20px;
+    background-color: #d4af36;
+    border: none;
+    transition: color 0.5s;
+}
+
+.d-flex button:hover {
+    color: #fff;
+    background-color: rgb(38, 84, 158);
+}
+
+.d-flex button span {
+    font-size: 20px;
+}
+
+
+/*--------dropmenu-----------*/
+.dropdown-menu li a {
+    color: rgb(38, 84, 158);
+    background-color: white;
+    transition: color 0.5s;
+}
+
+.dropdown-menu li a:hover {
+    background-color: white;
+    color: #d4af36;
+}
+
+
+/*------------------slides----------------------------*/
+.container {
+    min-height: 100vh;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.gallery-display-area-title p {
+    background-color: white;
+    color: #d4af36;
+    border: 1px solid #fff;
+    margin-top: -400px;
+    margin-right: 900px;
+    font-size: 25px;
+}
+
+.gallery-display-area-title {
+    z-index: 1;
+
+}
+
+
+.gallery-display-area {
+    overflow: hidden;
+    height: 820px;
+    width: 1400px;
+    margin: 0 auto;
+    margin-left: -50px;
+    margin-top: -150px;
+}
+
+.gallery-wrap {
+    width: 500%;
+    transition: transform 1s ease-in-out;
+}
+
+.image {
+    float: left;
+    height: 820px;
+    /* Adjust the height of the container */
+    width: 1400px;
+    /* Adjust the width of the container */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image img {
+    width: 2600px;
+    /* Make the image fill its container */
+    height: 550px;
+    /* Make the image fill its container */
+}
+
+.text {
+    text-align: center;
+    margin-top: -120px;
+    font-size: 20px;
+}
+
+.text p span {
+    font-size: 100%;
+    font-style: inherit;
+    font-weight: inherit;
+    box-sizing: border-box;
+}
+
+.text p strong {
+    color: #5b5a59;
+}
+
+.text p {
+    color: #454544;
+}
+
+.text_h2 {
+    text-align: center;
+}
+
+.text_h2 h2 {
+    color: rgb(15, 51, 108);
+    font-size: 55px;
+}
+
+/*-----------------------card------------------------------------*/
+.card {
+    display: flex;
+}
+
+.form {
+    width: 40%;
+    /* Đặt chiều rộng của form (điều chỉnh theo nhu cầu của bạn) */
+    margin-right: 20px;
+    /* Điều chỉnh khoảng cách giữa form và card_1 */
+}
+
+.card_1 {
+    width: 20%;
+    /* Đặt chiều rộng của card_1 (điều chỉnh theo nhu cầu của bạn) */
+}
+
+.card_1 {
+    position: relative;
+
+}
+
+
+.card_1 a img {
+    width: 120%;
+
+}
+
+.card_1 img {
+    width: 70%;
+    height: 350px;
+    /* Đảm bảo hình ảnh đầy đủ chiều rộng của phần tử cha */
+    display: block;
+    /* Loại bỏ khoảng trắng dưới hình ảnh khi sử dụng display: inline-block */
+    border-radius: 5%;
+
+}
+
+
+
+
+.card_1_text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: none;
+    z-index: 2;
+    color: white;
+    text-align: left;
+    padding: 10px;
+    max-width: 90%;
+    /* Đặt chiều rộng tối đa cho văn bản */
+    box-sizing: border-box;
+    /* Đảm bảo padding không làm tăng kích thước của phần tử */
+}
+
+
+
+.card_1_text_comment {
+    display: none;
+    opacity: 0;
+    /* Đặt opacity thành 0 ban đầu */
+    transition: opacity 1s ease;
+    /* Thêm hiệu ứng transition cho opacity trong 0.5 giây */
+}
+
+.card_1:hover .card_1_text {
+    display: block;
+
+}
+
+.card_1:hover .card_1_text_comment {
+    display: block;
+    opacity: 1;
+    /* Khi hover, đặt opacity thành 1 để hiển thị */
+
+}
+
+.card_four_right {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: 10px;
+}
+
+.card_1 {
+    width: 40%;
+    /* Đặt chiều rộng của card */
+    margin-bottom: 10px;
+    margin-top: 10px;
+    margin: 20px;
+    /* Khoảng cách giữa các card */
+}
+
+.card_1 img {
+    max-width: 100%;
+    /* Đảm bảo ảnh không vượt quá kích thước card */
+}
+
+
+
+/*----------------option-----------------------*/
+.option-text {
+    display: flex;
+    justify-content: space-around;
+    /* hoặc có thể sử dụng space-between để căng cách ra hai đầu */
+    align-items: center;
+    /* căn giữa theo chiều dọc */
+    margin-top: 10px;
+    height: 200px;
+}
+
+.option-text1 {
+    text-align: center;
+    /* căn giữa nội dung trong mỗi ô */
+    margin-top: 10px;
+    margin-right: -280px;
+    margin-left: 60px;
+
+
+
+}
+
+.option-text1 a {
+    transition: color 1s;
+}
+
+.option-text1 a:hover {
+    color: #fff;
+    background-color: rgb(15, 51, 108);
+}
+
+
+.option-text1:last-child {
+    margin-right: 15px;
+    /* Đặt margin-right của thẻ cuối cùng về 0 để không có khoảng cách bên phải */
+}
+
+
+.option-text1 a {
+    color: #000;
+    background-color: #d4af36;
+    text-decoration: none;
+    padding: 15px 70px;
+    font-size: 20px;
+    /* thêm padding để làm to background-color */
+    border-radius: 5px;
+    /* thêm border-radius để làm cho góc tròn */
+
+}
+
+
+/*------------------------footer---------------------------------*/
+.footer-container-top-items {
+    display: flex;
+    justify-content: space-between;
+    z-index: 1;
+    margin-top: -450px;
+
+}
+
+.footer-container-top-items-title {
+    width: 20%;
+    text-align: center;
+    position: relative;
+
+}
+
+.footer-container-top-items-title p {
+    color: #fff;
+}
+
+.footer-container-top-items-title img {
+    width: 100px;
+    background-color: #d4af36;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+.footer-container-top-items-title img:hover {
+    transform: scale(1.1);
+}
+
+/*-------------------------footer-information------------------------------*/
+.container-infomation {
+    background-color: #d4af36;
+    width: 1536px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-container-top-items-information {
+    display: flex;
+    background-color: #d4af36;
+    z-index: 1;
+    justify-content: space-between;
+    margin-top: 80px;
+
+}
+
+.fa-solid.fa-phone,
+.fa-regular.fa-envelope,
+.fa-solid.fa-location-dot {
+    color: rgb(14, 14, 109);
+    font-size: 25px;
+}
+
+.container-infomation ul {
+    display: flex;
+
+    height: 50px;
+    margin-top: 50px;
+    margin-left: 100px;
+
+}
+
+.container-infomation li {
+    margin-right: 30px;
+
+    color: #fff;
+    height: 50px;
+}
+
+.container-infomation ul li p {
+    margin: 10px;
+    margin-top: -2px;
+    font-size: 20px;
+
+}
+
+.container-infomation ul li {
+    display: flex;
+    color: #fff;
+
+}
+
+.container-logo a i {
+    color: #fff;
+    font-size: 25px;
+    margin-right: 30px;
+}
+
+.container-logo {
+    margin-right: 150px;
+}
+
+/*---------------------------footer-bottom-----------------------------------------*/
+.footer-container-bottom-title a {
+    border: none;
+    text-decoration: none;
+    color: #fff;
+    display: flex;
+    justify-content: right;
+    margin-right: 20px;
+    margin-top: 10px;
+}
